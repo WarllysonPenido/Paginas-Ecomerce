@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background: linear-gradient(156deg, rgb(85, 2, 2), rgb(40, 1, 1), #000000);
+  color: white;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  grid-area: header;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.aqui{
+  font-size: 2rem;
+  border-radius: 28px;
+  padding: 2%;
+  background-color: #b40a0a;
+
+}
+.cont-imagem img {
+  height: 60px;
+}
+.cont-imagem{
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 20%;
+}
+.nossso{ 
+  font-size: 3rem; 
+  background: linear-gradient(150deg, #000000c4 10%, #cc0202c4 40%, #e70101ad 60%, #000000a2 100%);
+  padding: .1% 15%;
+}
+#fora{
+  animation: finofino 19s infinite ease;
+}
+.nossso a{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: white;
+}
+nav {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  
+}
+.resto {
+  padding-right: 1%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  border-radius: 48px;
+  box-shadow: 0 0 8px 5px #b40a0a;
+}
+
+.tnot a{
+    color: #00ff00;
+}
+.tper a{
+  color: yellow;
+}
+.tmon a{
+  color: rgb(0, 217, 255);
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+.sadismo {
+  background: linear-gradient(134deg, #B8B8B8 40%, #DCDCDC 60%);
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.sadismo img {
+  max-width: 400px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+
+.imagems {
+  background: linear-gradient(150deg, #4A4A4A 10%, #B8B8B8 40%, #DCDCDC 60%, #8E8E93 100%);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imagems img {
+  width: 100px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.coisas-nlegais {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.informacoes h1 {
+  padding: 5px;
+  height: 11rem;
+  color: #000;
+  background: linear-gradient(180deg, #B8B8B8 40%, #DCDCDC 60%, #8E8E93 100%);
+  border-radius: 0 30px 30px 0;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pagamento {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pagamento p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagamento h1 {
+  color: #196831;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pagamento button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 48px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.pagamento button:hover {
+  background-color: #0064e6;
+}
+
+
+.absolute {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.absolute h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.absolute pre {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  margin-top: 1rem;
+  color: #fff;
+  display: flex;
+  padding: 1.5rem;
+  padding-top: 0rem;
+  flex-wrap: wrap;
+}
+
+footer .contatos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .contatos h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .contatos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .contatos ul li {
+  font-size: 0.9rem;
+}
+
+.logotipo{
+  height: 80%;
+}
+footer .pagamentos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .pagamentos h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer h1{
+  font-size: 0.5rem;
+  text-align: center;
+  width: 100%;
+  animation: finofino 8s infinite;
+}
+
+.informaoes-paias{
+  color: #000;
+}
+@keyframes finofino {
+    0% {
+        color: #ff0000;
+    }
+
+    25% {
+        color: #00ff00;
+    }
+
+    50% {
+        color: #6abcff;
+    }
+
+    75% {
+        color: #1eff00;
+    }
+
+    100% {
+        color: #ff00ff;
+
+    }
+}
